@@ -1,0 +1,21 @@
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-title {
+    color: #212529;
+    text-align: center;
+    padding: 2rem 1rem 1.2rem 1rem;
+    margin-bottom: 0;
+    margin-top: 3rem;
+}
+
+.products-divider {
+    display: block;
+    background-color: #f4623a;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,44 @@
+.container-1 {
+    margin-top: 4.5rem;
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.2) 0%, rgba(92, 77, 66, 0.4) 100%), url("../img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: calc(10rem - 4.5rem);
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.main-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+p {
+    color: white;
+}
+
+.link-to-section2 {
+    padding: 1.25rem 2.25rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+    background-color: #f4623a;
+}
+
+.btn-main {
+    color: white;
+}

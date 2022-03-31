@@ -1,9 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import "../assets/css/navbar.css";
 import * as Scroll from 'react-scroll';
 
 let Link = Scroll.Link;
-let scroll = Scroll.animateScroll;
 
 function Navbar() {
 
@@ -27,10 +26,10 @@ function Navbar() {
                 <button className="burger-menu" onClick={showMenu}><i className="fas fa-bars"></i></button>
             </div>
             <ul className="navlist toggle-growup">
-                <li className="item-1 nav-item" style={{ textDecoration: 'none' }} ><Link to="about" spy={true} smooth={true} duration={500}>Acerca</Link></li>
-                <li className="item-2 nav-item" style={{ textDecoration: 'none' }} ><Link to="products" spy={true} smooth={true} offset={50} duration={500}>Productos</Link></li>
-                <li className="item-3 nav-item" style={{ textDecoration: 'none' }} ><Link to="catalogue" spy={true} smooth={true} offset={50} duration={500}>Catálogo</Link></li>
-                <li className="item-4 nav-item" style={{ textDecoration: 'none' }} ><Link to="contact" spy={true} smooth={true} offset={50} duration={500}>Contáctenos</Link></li>
+                <li className="item-1 nav-item" style={{ textDecoration: 'none' }} ><Link to="about" spy={true} smooth={true} duration={1000} offset={-70} isDynamic={true} onClick={showMenu} className="nav-link">Acerca</Link></li>
+                <li className="item-2 nav-item" style={{ textDecoration: 'none' }} ><Link to="products" spy={true} smooth={true} duration={1000} offset={-70} isDynamic={true} onClick={showMenu} className="nav-link">Productos</Link></li>
+                <li className="item-3 nav-item" style={{ textDecoration: 'none' }} ><Link to="catalogue" spy={true} smooth={true} duration={1000} offset={-70} isDynamic={true} onClick={showMenu} className="nav-link">Catálogo</Link></li>
+                <li className="item-4 nav-item" style={{ textDecoration: 'none' }} ><Link to="contact" spy={true} smooth={true} duration={1000} offset={-70} isDynamic={true} onClick={showMenu} className="nav-link">Contáctenos</Link></li>
             </ul>
         </nav>
     )

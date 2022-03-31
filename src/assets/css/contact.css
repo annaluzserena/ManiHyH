@@ -1,0 +1,50 @@
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 15px;
+}
+
+.contact-title {
+    color: #212529;
+}
+
+.divider {
+    background-color: #f4623a;
+}
+
+.contact-text {
+    color: #6c757d;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 3rem;
+}
+
+.calls-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.contact-icon {
+    width: 1em;
+    color: #6c757d;
+    font-size: 3em;
+}
+
+.p-contact {
+    color: #212529;
+    margin-bottom: 3rem;
+}
+
+.wpp-link, .email {
+    font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #f4623a;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
