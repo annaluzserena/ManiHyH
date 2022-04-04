@@ -9,8 +9,10 @@ import "../assets/css/products.css";
 function Products() {
     return (
         <section className="container-3" id="products">
+            <div className="title-divider">
             <h2 className="products-title">Nuestras variedades</h2>
             <span className="products-divider"></span>
+            </div>
             <Variety
             name="Maní en Vaina Tostado"
             img={vaina}

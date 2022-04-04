@@ -4,7 +4,7 @@ import Main from "./components/Main";
 import About from "./components/About";
 import Products from "./components/Products";
 import Catalogue from "./components/Catalogue";
-import CarouselHolder from "./components/Carousel";
+import CarouselHolder from './components/Carousel';
 import Download from "./components/Download";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";

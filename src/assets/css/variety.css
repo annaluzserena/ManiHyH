@@ -20,3 +20,9 @@ h3 {
     color: #212529;
     text-align: center;
 }
+
+/*@media  screen and (min-width: 700px) {
+    .container-variety {
+        width: 50%;
+    }
+}*/
