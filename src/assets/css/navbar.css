@@ -68,7 +68,7 @@
 }
 
 .toggle-growup {
-    animation: growUp 500ms ease-in-out forwards;
+    animation: growUp 600ms ease-in-out forwards;
     transform-origin: top center;
 }
 
@@ -115,4 +115,43 @@
 
 .nav-link:hover {
     color: #f4623a;
+}
+
+@media screen and (min-width: 1000px) {
+    .burger-menu {
+        display: none;
+    }
+
+    .toggle-growup {
+        animation: none;
+    }
+
+    .toggle-navlist {
+        animation: none;
+    }
+
+    .mobile-container {
+        width: 40%;
+        background-color: transparent;
+        box-shadow: none;
+        padding-bottom: 1.05rem;
+    }
+
+    .navlist {
+        width: 60%;
+        flex-direction: row;
+        background-color: transparent;
+    }
+
+    .scroll-top, .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .scroll-top:hover, .nav-link:hover {
+        color: white;
+    }
+
+    .scroll-top {
+        margin-left: 2rem;
+    }
 }

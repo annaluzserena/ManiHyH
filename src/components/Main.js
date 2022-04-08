@@ -11,9 +11,9 @@ function Main() {
     return (
         <section className="container-1">
             <img className="logo" src={logo} alt="Logo Mani H&H"></img>
-            <p className="main-title">
+            <h2 className="main-title">
                 LA EXCELENTE CALIDAD SIEMPRE HACE LA DIFERENCIA
-            </p>
+            </h2>
             <img src={qr} alt="Código QR de Whatsapp"></img>
             <p className="qr-text">
                 ¡Escanea el código para iniciar un chat con Atención al Cliente!

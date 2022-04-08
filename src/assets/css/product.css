@@ -50,3 +50,15 @@
     font-size: 1.2rem;
     margin: 0;
 }
+
+@media screen and (min-width: 600px) {
+    .product-container {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .product-container {
+        width: 25%;
+    }
+}

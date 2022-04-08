@@ -1,6 +1,7 @@
 import React from "react";
 import Product from "./Product";
 import data from "../data/products.json";
+import "../assets/css/catalogue.css";
 
 
 console.log(data);
