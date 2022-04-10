@@ -2,6 +2,7 @@ import React from "react";
 import Product from "./Product";
 import data from "../data/products.json";
 import "../assets/css/catalogue.css";
+import { writeStorage } from "@rehooks/local-storage";
 
 
 console.log(data);
@@ -26,7 +27,7 @@ function Catalogue() {
         carousel.style.display = "block";
         document.body.style.overflow = "hidden";
 
-        window.localStorage.setItem("slide", n);
+        writeStorage("slide", n);
 
     };
 

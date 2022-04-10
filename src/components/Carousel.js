@@ -11,7 +11,7 @@ function CarouselHolder() {
 
     //const slideNumber = JSON.parse(window.localStorage.getItem("slide"));
 
-    const [index] = useLocalStorage("slide");
+    const [index] = useLocalStorage('slide');
 
     /*useEffect(() => {
         let pIndex = JSON.parse(window.localStorage.getItem("slide"));
