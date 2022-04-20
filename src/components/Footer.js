@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer>
             <p className="footer-text">
-            Copyright © 2021 - Alimentos Hedes
+            Copyright © 2022 - Alimentos Hedes
             </p>
         </footer>
     )
