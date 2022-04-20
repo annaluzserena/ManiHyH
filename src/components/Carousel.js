@@ -1,4 +1,4 @@
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import Product from "./Product";
@@ -9,16 +9,8 @@ import { useLocalStorage } from "@rehooks/local-storage";
 
 function CarouselHolder() {
 
-    //const slideNumber = JSON.parse(window.localStorage.getItem("slide"));
-
     const [index] = useLocalStorage('slide');
-
-    /*useEffect(() => {
-        let pIndex = JSON.parse(window.localStorage.getItem("slide"));
-        console.log(index);
-
-        setIndex(pIndex);
-    }, [index]);*/
+    //const [cursor, setCursor] = useState("");
 
     const closeCarousel = () => {
         let carousel = document.querySelector(".fixed-container");
@@ -33,43 +25,38 @@ function CarouselHolder() {
 
     };
 
+    /*const closeCarouselOnFixedC = () => {
+        let carousel = document.querySelector(".fixed-container");
+        let productInfo = document.querySelectorAll(".product-info");
+
+        if(cursor !== "pointer") {
+            for(let i = 0; i < productInfo.length; i++) {
+                productInfo[i].style.display = "flex";
+            }
+    
+            carousel.style.display = "none";
+            document.body.style.overflow = "visible";
+        }
+    };*/
+
     useEffect(() => {
         let products = document.querySelectorAll(".product-container");
-        if(window.innerWidth >= "600" & window.innerWidth < "1000") {
             for(let i = 0; i < products.length; i++) {
                 if(i >= 30) {
-                    products[i].style.left = "30%";
-                    products[i].style.width = "40%";
+                    products[i].style.maxWidth = "70vh";
+                    if(window.innerWidth <= "600") {
+                        products[i].style.left = "10%";
+                    } else if(window.innerWidth >= "620"){
+                        products[i].style.left = "33%";
+                    };
+                    products[i].style.width = "80%";
                 };
 
-                if(i >= 30 & (i === 30 | i === 35 | i === 36 | i === 42 | i === 47 | i === 51 | i === 58)) {
+                if(i >= 30 & (i === 30 | i === 35 | i === 36 | i === 42 | i === 47 | i === 51 | i === 57)) {
                     products[i].style.top = "30%"
                 };
             }
-        } else if(window.innerWidth >= "1000") {
-            for(let i = 0; i < products.length; i++) {
-                if(i >= 30) {
-                    products[i].style.left = "33%";
-                    products[i].style.width = "35%";
-                };
-
-                if(i >= 30 & (i === 30 | i === 35 | i === 36 | i === 42 | i === 47 | i === 51 | i === 58)) {
-                    products[i].style.top = "10%"
-                } else {
-                    products[i].style.bottom ="5%";
-                }
-            }
-        };
     }, []);
-
-    /*useEffect(() => {
-        let carousel = document.querySelector(".fixed-container");
-        if(window.innerWidth >= "600" & window.innerWidth < "1000") {
-            carousel.style.width = "70%"
-        } else if (window.innerWidth >= "1000") {
-            carousel.style.width = "50%"
-        }
-    }, []);*/
 
     return (
         <section className="fixed-container">
@@ -85,6 +72,7 @@ function CarouselHolder() {
                     )}
                 </Carousel>
             </div>
+            <span className="close-onclick" onClick={closeCarousel}></span>
         </section>
     )
 };
