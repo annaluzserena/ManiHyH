@@ -97,6 +97,7 @@
     font-weight: 700;
     font-size: 0.9rem;
     padding: 0.75rem 0.5rem;
+    /*transform: scaleY(0);*/
 }
 
 .nav-item {

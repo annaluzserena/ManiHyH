@@ -1,4 +1,5 @@
 .fixed-container {
+    max-height: 100vh;
     display: none;
     top: 0;
     left: 0;
@@ -10,15 +11,33 @@
 }
 
 .carousel-container {
+    width: auto;
     position: absolute;
-    top: 25%;
+    top: 15%;
+    z-index: 1044;
 }
 
 .cross {
     position: absolute;
     top: -1.8rem;
     left: 93%;
-    color: #e3e3e3;
-    width: 1em;
+    color: rgba(244, 98, 68, 1);
+    font-size: 1.2em;
     cursor: pointer;
+}
+
+.close-onclick {
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1042;
+    position: fixed;
+}
+
+@media screen and (min-width: 1200px) {
+    .cross {
+        font-size: 2em;
+    }
 }

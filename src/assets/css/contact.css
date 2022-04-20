@@ -25,6 +25,14 @@
     margin-bottom: 3rem;
 }
 
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .calls-container {
     width: 100%;
     padding-right: 15px;

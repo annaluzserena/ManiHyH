@@ -14,6 +14,7 @@
 
 .thumbnails {
     z-index: 3;
+    max-height: 697px;
 }
 
 .product-info {

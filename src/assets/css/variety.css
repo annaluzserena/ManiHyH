@@ -12,6 +12,8 @@ h3 {
     font-size: 1.5rem;
     text-align: center;
     margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .variety-detail {
