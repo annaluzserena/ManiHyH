@@ -10,14 +10,14 @@ function Navbar() {
         let burger = document.querySelector(".burger-menu");
         let navlist = document.querySelector(".navlist");
 
-        if(window.innerWidth <= "1000") {
+        if (window.innerWidth <= "1000") {
             burger.classList.toggle("toggle-burger");
-        if(!(navlist.classList.contains("toggle-growup")) & !(navlist.classList.contains("toggle-navlist"))) {
-            navlist.classList.add("toggle-navlist");
-        } else {
-            navlist.classList.toggle("toggle-navlist");
-        navlist.classList.toggle("toggle-growup");
-        };
+            if (!(navlist.classList.contains("toggle-growup")) & !(navlist.classList.contains("toggle-navlist"))) {
+                navlist.classList.add("toggle-navlist");
+            } else {
+                navlist.classList.toggle("toggle-navlist");
+                navlist.classList.toggle("toggle-growup");
+            };
         }
     };
 
