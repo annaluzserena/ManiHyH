@@ -25,7 +25,7 @@ function Contact() {
                     +54 9 221 4981282
                     <br></br>
                     Atención al cliente:
-                    <a href="https://wa.me/message/VLKBMCUMD3DZI1" title="Atención al cliente" className="wpp-link">+54 9 221 4287753</a>
+                    <a href="https://wa.me/message/VLKBMCUMD3DZI1" title="Atención al cliente" className="wpp-link" target="_blank" rel="noreferrer">+54 9 221 4287753</a>
                 </p>
             </div>
             <div className="email-container contact-container">
