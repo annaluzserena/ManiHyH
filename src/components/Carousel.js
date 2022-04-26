@@ -42,16 +42,6 @@ function CarouselHolder() {
     useEffect(() => {
         let products = document.querySelectorAll(".product-container");
             for(let i = 0; i < products.length; i++) {
-                if(i >= 30) {
-                    products[i].style.maxWidth = "70vh";
-                    if(window.innerWidth <= "600") {
-                        products[i].style.left = "10%";
-                    } else if(window.innerWidth >= "620"){
-                        products[i].style.left = "33%";
-                    };
-                    products[i].style.width = "80%";
-                };
-
                 if(i >= 30 & (i === 30 | i === 35 | i === 36 | i === 42 | i === 47 | i === 51 | i === 57)) {
                     products[i].style.top = "30%"
                 };
