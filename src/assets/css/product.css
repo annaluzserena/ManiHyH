@@ -1,8 +1,10 @@
 .product-container {
+    margin: auto;
     z-index: 999;
     width: 100%;
     position: relative;
     cursor: pointer;
+    max-width: 650px;
 }
 
 .fullsize {

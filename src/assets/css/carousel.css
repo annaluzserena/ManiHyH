@@ -12,9 +12,11 @@
 
 .carousel-container {
     width: auto;
+    height: auto;
     position: absolute;
-    top: 15%;
     z-index: 1044;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .cross {
