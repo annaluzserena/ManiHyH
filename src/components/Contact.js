@@ -30,7 +30,7 @@ function Contact() {
             </div>
             <div className="email-container contact-container">
                 <i className="fas fa-envelope contact-icon"></i>
-                <p className="email p-contact">
+                <p className="email p-contact" onClick={() => window.location.href = 'mailto:info@manihyh.com.ar'}>
                     info@manihyh.com.ar
                 </p>
             </div>
