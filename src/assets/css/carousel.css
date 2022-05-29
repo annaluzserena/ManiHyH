@@ -23,7 +23,7 @@
     position: absolute;
     top: -1.8rem;
     left: 93%;
-    color: rgba(244, 98, 68, 1);
+    color: rgba(244, 98, 68, 0.8);
     font-size: 1.2em;
     cursor: pointer;
 }
