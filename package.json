@@ -10,7 +10,7 @@
     "async": "^3.2.4",
     "decode-uri-component": "^0.4.1",
     "ejs": "^3.1.9",
-    "follow-redirects": "^1.15.2",
+    "follow-redirects": "^1.15.6",
     "json5": "^2.2.3",
     "loader-utils": "^3.2.1",
     "minimatch": "^9.0.1",
