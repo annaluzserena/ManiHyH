@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^14.4.3",
     "async": "^3.2.4",
     "decode-uri-component": "^0.4.1",
-    "ejs": "^3.1.9",
+    "ejs": "^3.1.10",
     "follow-redirects": "^1.15.2",
     "json5": "^2.2.3",
     "loader-utils": "^3.2.1",
