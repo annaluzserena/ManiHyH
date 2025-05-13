@@ -5,7 +5,7 @@
   "dependencies": {
     "@rehooks/local-storage": "^2.4.4",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^14.0.0",
+    "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.4.3",
     "async": "^3.2.4",
     "decode-uri-component": "^0.4.1",
